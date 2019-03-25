@@ -22,3 +22,12 @@ Code is doing:
 
 The amount and project attached to the items are done as arrays 
    - easy to manipulare with arrays ! 
+   
+   
+   --------------------------------------------
+   directories:
+   dist - we have a Admin buissines card & bna file containing all the cryptomaterial
+   lis - logic.js file with AddDonation finction and AddProject function
+   test - my-test.js a file for unit testing using Mocha framework and Chai librabry & 
+   
+   
