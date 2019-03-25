@@ -1,0 +1,36 @@
+{
+  "engines": {
+    "composer": "^0.20.2"
+  },
+  "name": "aidtech",
+  "version": "0.0.38",
+  "description": "Aid-technology app",
+  "scripts": {
+    "prepublish": "mkdirp ./dist && composer archive create --sourceType dir --sourceName . -a ./dist/aidtech.bna",
+    "pretest": "npm run lint",
+    "lint": "eslint .",
+    "test": "nyc mocha -t 0 test/*.js && cucumber-js"
+  },
+  "keywords": [
+    "composer",
+    "composer-network"
+  ],
+  "author": "Nikola Bozic",
+  "email": "bozicnikola1@gmail.com",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "latest",
+    "composer-admin": "^0.20.2",
+    "composer-cli": "^0.20.2",
+    "composer-client": "^0.20.2",
+    "composer-common": "^0.20.2",
+    "composer-connector-embedded": "^0.20.2",
+    "composer-cucumber-steps": "^0.20.2",
+    "cucumber": "^2.2.0",
+    "eslint": "latest",
+    "mkdirp": "latest",
+    "mocha": "latest",
+    "nyc": "latest"
+  }
+}
