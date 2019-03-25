@@ -2,14 +2,14 @@
 
 Aid-technology app
 *****************************************************************************************
-Architecture: Hyperledger Composer - a three layer architecture with Rest-Server APIs
-chaincode language: NodeJS
-Project directories:
-./dist - contain Admin buissines card & bna file containing all the cryptomaterial
-./lib - contain logic.js file with AddDonation finction and AddProject function
-./test - contain my-test.js a file for unit testing using Mocha framework and Chai librabry & 
-       boiler-plate.js file with a boilerplate code in order to automatize thesting and preapre a embeded NodeJS
-       enviroment to carry on test. 
+- Architecture: Hyperledger Composer - a three layer architecture with Rest-Server APIs
+- chaincode language: NodeJS
+- Project directories:
+-./dist - contain Admin buissines card & bna file containing all the cryptomaterial.
+-./lib - contain logic.js file with AddDonation finction and AddProject function.
+-./test - contain my-test.js a file for unit testing using Mocha framework and Chai librabry & 
+      - boiler-plate.js file with a boilerplate code in order to automatize thesting and preapre a embeded NodeJS
+      - enviroment to carry on test. 
 ****************************************************************************************
 - BNA Resources are participant & assets
 - BNA Assets are Projects & Items
