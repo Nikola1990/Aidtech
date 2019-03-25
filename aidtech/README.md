@@ -1,6 +1,18 @@
 # aidtech
 
-Aid-technology app
+blockchain app to manage donations to be donated to a particular humanitarian project.
+***************************************************************************************
+ Each transaction done on the blockchain include:
+
+- Project name of a project to donate to
+
+- Item Type of item to donate
+
+- Amount (number) amount of the donation
+
+- Timestamp
+********************************************************************
+Chaincode include the function AddDonation (Project, ItemType, Amount) to add a donation to a project. This check that Project and ItemType actually exist.
 *****************************************************************************************
 - Architecture: Hyperledger Composer - a three layer architecture with Rest-Server APIs
 - chaincode language: NodeJS
