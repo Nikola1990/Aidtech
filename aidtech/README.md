@@ -28,20 +28,20 @@ Chaincode include the function AddDonation (Project, ItemType, Amount) to add a 
 
 Each project has unique ID.
 Each Item has a filed ItemType and an array of strings named 'project'.
-Each element of the project array represents the project ID attachet to the specific item.
+Each element of the 'project' array represents the project ID attached to the specific Item.
 
-- Chaincode AddDonation - uder the lib directoy within logic.js file:
+- Chaincode contains AddDonation function - uder the lib directoy within logic.js file:
 passes donationData to the function AddDonation: - a string : project ID
                                                  - a Integer: amount 
                                                  - a relation to a particular Item Type
 - Chaincode is doing:
     1. check if the project exist in Project registry.
-    2. if does, gets Items registry and check if the named project ID is attached to this item:
-       get the array project and check if there is an element = projectid
-    3. push/create the element with value passed from donationData to amount array. 
+    2. if does, gets Items registry and checks if the project ID is attached to this particular Item:
+       Get the 'project' array of strings and check if there is an project(element) = projectid.
+    3. Push/create the element with value passed from donationData to 'amount' array. 
 
 - The donation amounts and projects attached to the items are managed within arrays of String & Integers. 
-   - easy to manipulare with arrays ! 
+   - Easy to manipulare with arrays ! 
    
    
 
